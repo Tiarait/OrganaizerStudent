@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>images/eventindicator.png</file>
+        <file>images/icon.ico</file>
+        <file>DialogTaskDelete.qml</file>
+        <file>DialogSchedueDelete.qml</file>
+        <file>DialogTaskView.qml</file>
+        <file>DialogScheduleView.qml</file>
+        <file>DialogTaskAdd.qml</file>
+        <file>DialogShceduleAdd.qml</file>
+    </qresource>
+</RCC>
