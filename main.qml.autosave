@@ -147,7 +147,7 @@ ApplicationWindow {
                 TableViewColumn {
                     id: scheduleStart
                     role: "schedulstart"
-                    title: qsTr("Strt")
+                    title: qsTr("Start")
                     width: 60
                 }
                 TableViewColumn {

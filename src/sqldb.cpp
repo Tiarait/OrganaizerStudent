@@ -189,7 +189,7 @@ bool SqlDB::removeRecord(const QString &db, const QString &id) {
 bool SqlDB::searchTask(const QString &date) {
     QSqlQuery query;
     query.prepare("SELECT COUNT(*) FROM " TABLE_TASK " WHERE " TABLE_TASK_DEADLINE_DATE " = '"+date+"' and "
-                  TABLE_TASK_STATUS " = 'В процесі'");
+                  TABLE_TASK_STATUS " = 'In process'");
     if(query.exec())
     {
         while (query.next())

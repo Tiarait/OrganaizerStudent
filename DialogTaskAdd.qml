@@ -19,7 +19,7 @@ Dialog {
     }
     onAccepted: {
         database.inserIntoTable("task", Qt.formatDateTime(new Date(), "dd-MM-yyyy"),
-                                timeTask.text, dateTask.text, titleTask.text, descriptionTask.text, qsTr("В процесі"))
+                                timeTask.text, dateTask.text, titleTask.text, descriptionTask.text, qsTr("In process"))
         modelTask.updateModel(Qt.formatDate(calendar.selectedDate, "yyyyMMdd"))
         if(calendar.style === newCalendarStyle) calendar.style = calendarstyle
         else calendar.style = newCalendarStyle

@@ -7,6 +7,7 @@ import QtQuick.Layouts 1.1
 Dialog {
     title: modelSchedule.get(tableSchedule.currentRow).schedultitle + ""
     standardButtons: StandardButton.Ok
+
     ColumnLayout {
         width: parent ? parent.width : 100
         RowLayout {

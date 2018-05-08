@@ -24,13 +24,13 @@ QHash<int, QByteArray> ScheduleListModel::roleNames() const {
 }
 
 void ScheduleListModel::updateModel(const QString &week){
+//    " WHERE " TABLE_SCHEDULE_WEEK " = '"+week+"'"
     this->setQuery("SELECT id, "
                    TABLE_SCHEDULE_START_TIME ", "
                    TABLE_SCHEDULE_END_TIME ", "
                    TABLE_SCHEDULE_WEEK ", "
                    TABLE_SCHEDULE_TITLE ", "
-                   TABLE_SCHEDULE_DESC " FROM " TABLE_SCHEDULE " WHERE "
-                   TABLE_SCHEDULE_WEEK " = '"+week+"' ORDER BY " TABLE_SCHEDULE_START_TIME);
+                   TABLE_SCHEDULE_DESC " FROM " TABLE_SCHEDULE " ORDER BY " TABLE_SCHEDULE_START_TIME);
 }
 
 QVariantMap ScheduleListModel::get(int idx){

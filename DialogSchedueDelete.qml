@@ -7,7 +7,7 @@ import QtQuick.Layouts 1.1
 Dialog {
     title: qsTr("Delete a line")
     Label {
-        text: qsTr("Confirm <b>deletion</ b> \"" + modelSchedule.get (tableSchedule.currentRow) .schedultitle
+        text: qsTr("Confirm <b>deletion</ b> \"" + modelSchedule.get(tableSchedule.currentRow).schedultitle
                    + "\" from the schedule")
         Layout.columnSpan: 2
         Layout.fillWidth: true
